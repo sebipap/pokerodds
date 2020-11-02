@@ -1,0 +1,466 @@
+
+
+@font-face {
+  font-family: poker;
+  src: url(font.ttf);
+}
+
+@font-face {
+  font-family: simbolos;
+  src: url(fontb.otf);
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(fontc.ttf);
+}
+
+@font-face {
+  font-family: product-sans;
+  src: url(product-sans.ttf);
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+body{
+
+  background-color: #5b5b5b;
+  background-image: url("fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background: rgb(40,57,77);
+  background: radial-gradient(circle, rgba(40,57,77,1) 0%, rgba(31,30,37,1) 100%);
+
+  
+
+
+}
+.carta{
+
+   background: rgb(255,255,255);
+   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 100%);
+   padding: 0.4vw;
+   border-radius: 0.75vw;
+   margin: 0.79%;
+   list-style: none;
+   box-shadow:0vw 0vw 1vw 0.05vw rgba(0, 0, 0, 0.68);
+   transition: transform.2s;
+
+   
+}
+
+.carta:hover , .carta:focus-within{
+  box-shadow:3px 8px 20px 3px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+
+
+
+.carta #num input:focus , .carta #sig input:focus, .carta #numP input:focus , .carta #sigP input:focus{
+  outline: none;
+}
+
+.carta #num , .carta #numP{
+  height: 3vw;
+  padding-bottom: 0.5vw;
+}
+
+.carta #sig , .carta #sigP{
+  height: 3vw;
+  margin-bottom: 0.5vw; 
+
+}
+
+.carta:hover > #sig input , .carta:focus-within > #sig input{
+  border-top: dotted blue 0.2vw;
+  color:blue;
+}
+.carta:hover > #num input , .carta:focus-within > #num input{
+  color:blue;
+}
+
+
+
+
+.carta #num  input{
+  width: 100%;
+  height: 100%;
+  margin: 2%;
+  object-position: center;
+  font-size: 2.5vw;
+  text-align: bottom-right;
+  font-family: poker;
+  border:none;
+  color: #5353ac;
+  background-color: transparent;
+  
+
+  
+}
+
+.carta #sig  input{
+
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  font-size: 1.5vw;
+  padding-left: 1%;
+  text-align: center;
+  border: none;
+  font-family: simbolos;
+  border: none;
+  border-top: 0.2vw dotted #5353ac;
+  color: #5353ac;
+  background-color: transparent;
+
+}
+
+.carta #numP  input{
+
+  width: 100%;
+  height: 100%;
+  margin: 2%;
+  object-position: center;
+  font-size: 2.5vw;
+  text-align: bottom-right;
+  font-family: poker;
+  border:none;
+  margin-bottom: 0.5vw; 
+  background-color: transparent;
+}
+
+.carta #sigP input{
+
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  padding-left: 1%;
+  text-align: center;
+  border: none;
+  margin-bottom: 0.5vw; 
+  font-family: simbolos;
+  font-size: 1.5vw;
+  border-top: 0.2vw dotted transparent;
+  background-color: transparent;
+  
+  
+
+  
+}
+
+.cartas1 {
+  background-color: #00725d;
+  height: 9vw;
+  margin: auto;
+  width: 35vw;
+  padding: 3%;
+  border-radius: 4vw;
+  box-shadow:0vw 0vw 0.65vw 0.5vw rgba(0, 0, 0, 0.44);
+  border:0.5vw solid #1e4325;
+  background-image: url("mesa.jpg");
+  background-repeat: repeat;
+  background-size: 25vw 12.5vw;
+
+
+
+
+}
+
+.cartas1 .carta{
+  float:left;
+  margin:1.3%;
+  width: 14.5%;
+
+}
+
+
+.cartas2 {
+
+  margin: auto;
+  padding: 2vw;
+  width: 16.1vw;
+
+
+
+}
+
+.cartas2 .carta{
+  display: inline-grid;
+  margin:0.4vw;
+  width: 31.82%;
+
+}
+
+li{
+  list-style: none;
+}
+
+.sub button{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border-radius: 1.2vw;
+  box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  margin: 0.5vw;
+  border:none;
+}
+.sub img{
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.res button{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border: none;
+  border-radius: 1.2vw;
+  box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  margin: 0.5vw;
+}
+.res img{
+  width: 2vw;
+  height: 2vw;
+}
+
+.random button{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border: none;
+  border-radius: 1.2vw;
+  box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  margin: 0.5vw;
+}
+.random img{
+  width: 3vw;
+  height: 3vw;
+}
+
+.edit button{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border: none;
+  border-radius: 1.2vw;
+  box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  margin: 0.5vw;
+}
+.edit img{
+  width: 2vw;
+  height: 2vw;
+}
+
+
+.juego{
+  padding: 2vw;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.bar{
+  
+  padding: 1vw;
+  font-size: 1vw;
+  border-radius: 1.5vw;
+  box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.3);
+  margin-left:  5%;
+  margin-right: 5%;
+  margin-bottom: 1.5%;
+  background-color: rgba(100,100,100,.3);
+  width: 90%;
+  height: 6vw;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 45% 15% 40%;
+
+}
+
+.bar button{
+  transition: transform .2s;
+}
+
+.bar .txts input{
+  
+  height: 3em;
+  width: 10%;
+  font-size: 0.85vw;
+  border-radius: 5vw;
+  text-align: center;
+  border:none;
+  margin: 0.2vw;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  display: inline;
+  font-family: arial; 
+  transition: transform 1s;
+  font-weight: bold;
+  padding: 0vw;
+  
+
+}
+
+.bar button:hover{
+  transform: translate(0,-5px);
+  box-shadow:3px 8px 20px 3px rgba(0, 0, 0, 0.7);
+  
+}
+
+.bar button:active{
+  background-color: rgb(185, 185, 185);
+  transform: translate(0,-5px);
+  transform: scale(0.9);
+  box-shadow:3px 8px 20px 3px rgba(0, 0, 0, 0.7);
+  
+}
+
+.bar .txts input:hover{
+  transform: translate(0,-5px);
+  box-shadow:3px 8px 20px 3px rgba(0, 0, 0, 0.37);
+}
+
+.bar .btns .jugadores input:hover{
+  transform: translate(0,0px);
+  box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0.37);
+}
+
+.bar .btns .jugadores:hover{
+    transform: translate(0,-5px);
+  box-shadow:3px 8px 20px 3px rgba(0, 0, 0, 0.37);
+}
+
+
+ .btns button , .btns .jugadores{
+  float: left;
+  margin-right: 1vw;
+  margin-bottom: 0.5vw;
+  transition: transform .2s;
+  outline: none;
+
+}
+
+.txts{
+  float: left;
+  overflow: auto;
+}
+
+
+.php{
+
+  background-color: rgba(255,255,255,.2);
+  border: 0.1vw solid rgba(255,255,0,.5);
+  color: yellow;
+  display: none;
+  border-radius: 12px;
+  padding: 0.6vw;
+  font-family: arial;
+  margin-bottom: 10vw;
+  position: static;
+  right: 2vw;
+  font-size: 1.5vw;
+  min-width: 5vw;
+  transition: min-width 0.5s, font-size 0.5s , max-width 0.5s;
+  max-width: 80vw;
+  max-height: 35vw;
+  overflow:auto;
+  
+}
+
+/*.php:hover , .php:active , .php:focus{
+  min-width: 20vw;
+  font-size: 1vw;
+  max-width: 50vw;
+  padding: 2vw;
+  
+  
+ 
+
+}
+
+*/
+
+.jugadores input{
+  width: 4vw;
+  height: 4vw;
+  margin: 0.5vw;
+  margin-bottom: 0.5vw; 
+  outline: none;
+  border:none;
+  background-color: transparent;
+  font-family: product-sans;
+  font-size: 2.5vw;
+}
+
+.jugadores img{
+  width: 3vw;
+  height: 3vw;
+  margin: 1vw;
+}
+
+
+.btns .jugadores {
+  display: grid;
+  grid-template-columns: 45% 15% 40%;
+  border: none;
+  margin: 0.5vw;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1.2vw;
+  height: 5vw;
+  background-color: white; 
+}
+
+
+
+.container{
+  bottom: 0px;
+}
+
+p{
+  font-family: titulo;
+  font-size: 3vw;
+  font-weight: thin;
+  margin:0;padding: 0;
+  color: #273547;
+  margin-top: 2vw;
+  margin-left: 5%;
+  margin-bottom: 2vw;
+  text-shadow: 0 0 20px #000000f0;
+  transition: color .25s, text-shadow .5s;
+}
+
+  .p p:hover{
+    color: #83b9ff;
+    text-shadow: 0 0 10px #6185b3, 0 0 50px #6185b3;
+  }
+
+  .result input{
+    border: none;
+    margin: 0.5vw;
+    font-family: product-sans;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 1.2vw;
+    height: 5vw;
+    width: 5vw;
+    
+    box-shadow:3px 8px 20px 3px rgba(0, 0, 0, 0.37);
+    outline: none;
+
+  }
+
+  .result{
+    outline: none;
+    transition: transform .5s;
+  }
+
+
+  .result:hover{
+    transform: scale(1.2);
+  }
